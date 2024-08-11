@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background: ;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+h1 {
+    font-family: "Air Strip Arabic", sans-serif;
+    font-size: 7em;
+    margin-top: 620px;
+    margin-bottom: 1px;
+    transition: transform 0.3s ease;
+    /*text-shadow: 
+        1px 1px 0 rgb(255, 255, 255),
+       -1px -1px 0 rgb(255, 255, 255),
+        1px -1px 0 rgb(255, 255, 255),
+       -1px 1px 0 rgb(255, 255, 255)*/
+}
+
+h2 {
+    font-family: "Air Strip Arabic", sans-serif;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+    margin-bottom: 60px ;
+}
+
+
+p {
+    font-family: "Air Strip Arabic", sans-serif;
+    font-size: 3.5 em;
+    margin-bottom: 20px;
+}
+
+.multi-color {
+    color: #4B5191; /*xanh*/
+}
+
+.highlight {
+    color: #EE9340; /* vàng */
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Air Strip Arabic';
+    src: url('Air Strip Arabic.otf') format('opentype');
+}
+
+
+.container-1 {
+    display: flex;
+    justify-content: center; /* Căn giữa các ảnh theo chiều ngang */
+    align-items: center;     /* Căn giữa các ảnh theo chiều dọc */
+    gap: 60px;               /* Khoảng cách giữa các ảnh */
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 200px;            /* Đường kính của ảnh tròn */
+    height: 200px;           /* Đường kính của ảnh tròn */
+    border-radius: 50%;      /* Tạo hình tròn */
+    overflow: hidden;        /* Ẩn phần ngoài đường tròn nếu ảnh không phải là hình tròn */
+    display: flex;           /* Sử dụng flexbox để căn giữa nội dung bên trong */
+    justify-content: start; /* Căn giữa ảnh bên trong */
+    align-items: flex-start;     /* Căn giữa ảnh bên trong */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.circle img {
+    width: 100%;             /* Đảm bảo ảnh phủ kín khung tròn */
+    height: auto;            /* Đảm bảo tỉ lệ của ảnh */
+}
+
+
+header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000; /* Đảm bảo thanh bar nằm trên cùng */
+    border-bottom: 4px solid transparent; /* Đường viền trong suốt để sử dụng border-image */
+    border-image: linear-gradient(to right, #EE9340, #4B5191) 1; /* Đường viền với gradient */
+}
+
+header .logo {
+    width: 40px;            /* Đường kính của ảnh tròn */
+    height: 40px;           /* Đường kính của ảnh tròn */
+    border-radius: 30%;      /* Tạo hình tròn */
+    overflow: hidden;        /* Ẩn phần ngoài đường tròn nếu ảnh không phải là hình tròn */
+    display: flex;           /* Sử dụng flexbox để căn giữa nội dung bên trong */
+    justify-content: center; /* Căn giữa ảnh bên trong */
+    align-items: center;     /* Căn giữa ảnh bên trong */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+header .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+header .social-icons img {
+    width: 40px;            /* Đường kính của ảnh tròn */
+    height: 40px;           /* Đường kính của ảnh tròn */
+    border-radius: 30%;      /* Tạo hình tròn */
+    overflow: hidden;        /* Ẩn phần ngoài đường tròn nếu ảnh không phải là hình tròn */
+    display: flex;           /* Sử dụng flexbox để căn giữa nội dung bên trong */
+    justify-content: center; /* Căn giữa ảnh bên trong */
+    align-items: center;     /* Căn giữa ảnh bên trong */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+} 
+
+.inline-image {
+    vertical-align: middle;
+    height: 100px; /* Điều chỉnh kích thước ảnh nếu cần */
+    resize: 100%;
+}
+
+.nav{
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px #4B5191;
+    margin-bottom: 100px;
+}
+
+.nav-item{
+    color: #83818c;
+    padding: 20px;
+    text-decoration: none;
+    transition: .3s;
+    margin: 0 6px;
+    z-index: 1;
+    font-family: "Air Strip Arabic", sans-serif;
+    font-weight: 500;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #dfe2ea;
+        border-radius: 8px 8px 0 0;
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+.nav-item:not(.is-active):hover:before{
+    opacity: 1;
+    bottom: 0;
+}
+
+.nav-item:not(.is-active):hover{ color:#333; }
+
+.nav-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: .4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 580px) {
+    .nav {overflow: auto;}
+}
