@@ -305,7 +305,7 @@
         font-family: "Helvetica Neue", Arial, sans-serif;    
         flex: 1;
         font-style: italic;
-        margin-right: 20px;
+        
     }
 
     .quote-image {
@@ -313,7 +313,8 @@
         height: 100px;
         background-size: cover;
         background-position: center;
-        background-image: url('logo1.png');
+        background-image: url('img/logo1.png');
+        margin-right: 10px;
     }
 }
 
